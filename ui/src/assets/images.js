@@ -58,3 +58,5 @@ export const staffGroupPhoto =
 
 export const curriculumBg =
   "https://www.st-anselms.harrow.sch.uk/i/graphics/Our_Curriculum/Curriculum_Overview/Curriculum_Overview.png";
+
+  export const demoLogo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQtI0iI2-onvumVhQQnFlkGj18vHLwC5Wifg&s"
