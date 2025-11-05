@@ -9,7 +9,7 @@ export const Admissions = () => {
   return (
     <div className="overflow-hidden">
       {/* Hero */}
-      <section className="relative h-[60vh] flex flex-col justify-center items-center bg-linear-to-r from-blue-600 to-sky-400 text-white text-center px-6">
+      <section className="relative h-[60vh] flex flex-col justify-center items-center bg-linear-to-r from-blue-600 to-sky-400 dark:from-gray-700 dark:to-gray-500  text-white text-center px-6">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -31,14 +31,14 @@ export const Admissions = () => {
       </section>
 
       {/* Admission Steps */}
-      <section className="py-20 px-6 md:px-20 bg-white text-center">
+      <section className="py-20 px-6 md:px-20  text-center">
         <motion.h2
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           custom={1}
-          className="text-3xl font-bold mb-12"
+          className="text-3xl font-bold mb-12 dark:text-gray-300"
         >
           Admission Process
         </motion.h2>
@@ -63,17 +63,17 @@ export const Admissions = () => {
             { icon: Smile, title: "Step 4: Join Us!", text: "Complete enrollment and get ready to start learning!" },
           ].map((item, i) => (
             <motion.div
-              key={item.title}
+              key={i}
               variants={fadeUp}
               custom={2}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
             >
-              <Card className="p-6 text-center hover:shadow-lg transition">
+              <Card className="bg-white border-gray-200 dark:bg-gray-600 text-gray-600 dark:text-gray-200 dark:border-none p-6 text-center hover:scale-103 transition-all duration-300 ease-in-out h-full">
                 <item.icon className="w-10 h-10 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.text}</p>
+                <h3 className="text-xl font-semibold mb-2 ">{item.title}</h3>
+                <p className=" text-sm">{item.text}</p>
               </Card>
             </motion.div>
           ))}
@@ -81,7 +81,7 @@ export const Admissions = () => {
       </section>
 
       {/* Requirements */}
-      <section className="bg-gray-50 py-20 px-6 md:px-20 text-center">
+      <section className=" py-20 px-6 md:px-20 text-center">
         <motion.h2
           variants={fadeUp}
           initial="hidden"
@@ -97,7 +97,7 @@ export const Admissions = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="max-w-3xl mx-auto text-left text-gray-700 space-y-4"
+          className="max-w-3xl mx-auto text-left  space-y-4"
         >
           <li>📄 Completed application form</li>
           <li>🧾 Copy of birth certificate</li>
@@ -109,7 +109,7 @@ export const Admissions = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 px-6 md:px-20 bg-white text-center">
+      <section className="py-20 px-6 md:px-20 text-center">
         <motion.h2
           variants={fadeUp}
           initial="hidden"
@@ -151,10 +151,10 @@ export const Admissions = () => {
               whileInView="visible"
               viewport={{ once: true }}
             >
-              <Card className="p-6 hover:shadow-md transition">
-                <item.icon className="w-10 h-10 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.text}</p>
+              <Card className="bg-white border-gray-200 dark:bg-gray-600 text-gray-600 dark:text-gray-200 dark:border-none p-6 hover:shadow-md hover:scale-103 transition duration-300 ease-in-out h-full">
+                <item.icon className="w-10 h-10 text-blue-600 dark:text-blue-400 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold mb-2 ">{item.title}</h3>
+                <p className=" text-sm">{item.text}</p>
               </Card>
             </motion.div>
           ))}
@@ -190,10 +190,17 @@ export const Admissions = () => {
           viewport={{ once: true }}
           className="flex justify-center gap-4 flex-wrap"
         >
-          <Button size="lg" className=" bg-violet-500 font-semibold hover:bg-violet-400 border-none">
+          <Button
+            size="lg"
+            className=" bg-violet-500 hover:bg-violet-400 dark:bg-violet-500 dark:hover:bg-violet-400 font-semibold  border-none"
+          >
             Apply Online
           </Button>
-          <Button size="lg" variant="outline" className="bg-amber-500 border-none hover:bg-amber-400">
+          <Button
+            size="lg"
+            variant="outline"
+            className="bg-amber-500 dark:bg-amber-500 border-none hover:bg-amber-400 dark:hover:bg-amber-400"
+          >
             Contact Admissions
           </Button>
         </motion.div>

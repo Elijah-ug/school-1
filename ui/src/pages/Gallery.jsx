@@ -6,7 +6,7 @@ import { images } from "@/assets/images";
 
 export const Gallery = () => {
   return (
-    <section id="gallery" className="py-20 px-6 md:px-20 bg-white text-center">
+    <section id="gallery" className="py-20 px-6 md:px-20 text-center">
       <motion.h2
         variants={fadeUp}
         initial={{ opacity: 0, y: 20 }}
@@ -33,12 +33,12 @@ export const Gallery = () => {
             className="relative overflow-hidden rounded-xl shadow hover:shadow-lg transition-shadow"
           >
             <img
-              src={src}
+              src={src.img}
               alt={`Gallery ${i + 1}`}
               className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
             />
-            <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex justify-center items-center">
-              <ImageIcon className="text-white w-8 h-8" />
+            <div className="absolute  inset-0 bg-black/30  group-hover:opacity-100 transition-opacity flex justify-center items-end pb-2 text-xs">
+              <p className="bg-blue-400 text-gray-700 p-1 rounded-sm">{src.description}</p>
             </div>
           </motion.div>
         ))}

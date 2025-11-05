@@ -42,7 +42,7 @@ export const Academics = () => {
       </section>
 
       {/* Core Subjects */}
-      <section className="py-20 px-6 md:px-20 bg-white text-center">
+      <section className="py-20 px-6 md:px-20 text-center">
         <motion.h2
           variants={fadeUp}
           initial={{ opacity: 0, y: 20 }}
@@ -74,9 +74,9 @@ export const Academics = () => {
               viewport={{ once: true }}
               //   custom={4.5}
             >
-              <Card className="p-6 hover:shadow-lg transition text-center">
-                <item.icon className="w-10 h-10 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-gray-800">{item.title}</h3>
+              <Card className="bg-white border-gray-200 dark:bg-gray-600 text-gray-600 dark:text-gray-200 dark:border-none p-6 hover:shadow-md hover:scale-103 transition duration-300 ease-in-out h-full">
+                <item.icon className="w-10 h-10 text-blue-600 dark:text-blue-400 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold ">{item.title}</h3>
               </Card>
             </motion.div>
           ))}
@@ -84,7 +84,7 @@ export const Academics = () => {
       </section>
 
       {/* Extra Programs */}
-      <section className="py-20 px-6 md:px-20 bg-gray-50 text-center">
+      <section className="py-20 px-6 md:px-20  text-center">
         <motion.h2
           variants={fadeUp}
           initial="hidden"
@@ -110,11 +110,10 @@ export const Academics = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              //   custom={5.5}
             >
-              <Card className="p-6 hover:shadow-lg transition text-center">
-                <item.icon className="w-10 h-10 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-gray-800">{item.title}</h3>
+              <Card className="bg-white border-gray-200 dark:bg-gray-600 text-gray-600 dark:text-gray-200 dark:border-none p-6 hover:shadow-md hover:scale-103 transition duration-300 ease-in-out h-full">
+                <item.icon className="w-10 h-10 text-blue-600 dark:text-blue-400 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold ">{item.title}</h3>
               </Card>
             </motion.div>
           ))}
@@ -122,7 +121,7 @@ export const Academics = () => {
       </section>
 
       {/* Beyond the Classroom */}
-      <section className="py-20 px-6 md:px-20 bg-white text-center">
+      <section className="py-20 px-6 md:px-20 text-center">
         <motion.h2
           variants={fadeUp}
           initial="hidden"
@@ -158,9 +157,9 @@ export const Academics = () => {
               viewport={{ once: true }}
               //   custom={6.5}
             >
-              <Card className="p-6 hover:shadow-lg transition">
-                <h3 className="text-xl font-semibold text-blue-700 mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.text}</p>
+              <Card className="bg-white border-gray-200 dark:bg-gray-600 text-gray-600 dark:text-gray-200 dark:border-none p-6 hover:shadow-md hover:scale-103 transition duration-300 ease-in-out h-full">
+                <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-2">{item.title}</h3>
+                <p className=" text-sm">{item.text}</p>
               </Card>
             </motion.div>
           ))}

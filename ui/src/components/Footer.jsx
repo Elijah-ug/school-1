@@ -8,7 +8,7 @@ import { Separator } from "./ui/separator";
 export const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 py-10 px-6 md:px-20">
-      <div className="grid md:grid-cols-3 gap-10">
+      <div className="grid md:grid-cols-3 gap-10 place-items-center">
         <div>
           <h3 className="text-xl font-semibold text-white mb-4">XYZ Primary School</h3>
           <p className="text-sm">Inspiring young minds through quality education, creativity, care, and discipline.</p>

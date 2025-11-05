@@ -14,7 +14,7 @@ export default function App() {
   return (
     // <ThemeProvider>
     <BrowserRouter>
-      <div className="min-h-screen flex flex-col scroll-smooth bg-white dark:bg-gray-700">
+      <div className="min-h-screen flex flex-col scroll-smooth bg-gray-100 dark:bg-gray-700">
         <Navbar />
         <main className="flex-1 pt-13">
           <Routes>

@@ -40,7 +40,7 @@ export const Contact = () => {
       </section>
 
       {/* Contact Info */}
-      <section className="py-20 px-6 md:px-20 bg-white text-center">
+      <section className="py-20 px-6 md:px-20  text-center">
         <motion.h2
           variants={fadeUp}
           initial={{ opacity: 0, y: 20 }}
@@ -69,18 +69,18 @@ export const Contact = () => {
               transition={{ duration: 1, delay: 0.2 }}
               whileInView="visible"
               viewport={{ once: true }}
-              className="flex flex-col items-center text-center bg-gray-50 p-6 rounded-2xl shadow hover:shadow-lg transition"
+              className="flex flex-col items-center bg-white border-gray-200 dark:bg-gray-600 text-gray-600 dark:text-gray-200 dark:border-none p-6 shadow-md hover:shadow-md hover:scale-103 transition duration-300 ease-in-out rounded-lg h-full"
             >
-              <item.icon className="w-10 h-10 text-blue-600 mb-3" />
-              <h3 className="font-semibold text-lg text-gray-800 mb-2">{item.title}</h3>
-              <p className="text-gray-600 text-sm">{item.value}</p>
+              <item.icon className="w-10 h-10 text-blue-600 dark:text-blue-400 mb-3" />
+              <h3 className="font-semibold text-lg  mb-2">{item.title}</h3>
+              <p className=" text-sm">{item.value}</p>
             </motion.div>
           ))}
         </div>
       </section>
 
       {/* Contact Form */}
-      <section className="py-20 px-6 md:px-20 bg-gray-50 text-center">
+      <section className="py-20 px-6 md:px-20  text-center">
         <motion.h2
           variants={fadeUp}
           initial={{ opacity: 0, y: 20 }}
@@ -106,24 +106,24 @@ export const Contact = () => {
         >
           <Input
             type="text"
-            className="p-2 text-lg focus:outline-none border-gray-300"
+            className="p-2 h-13 text-lg focus:outline-none border-gray-300"
             placeholder="Your Name"
             required
           />
           <Input
             type="email"
-            className="p-2 text-lg focus:outline-none border-gray-300"
+            className="p-2 h-13 text-lg focus:outline-none border-gray-300"
             placeholder="Your Email"
             required
           />
           <Input
             type="text"
-            className="p-2 text-lg focus:outline-none border-gray-300"
+            className="p-2 h-13 text-lg focus:outline-none border-gray-300"
             placeholder="Subject"
             required
           />
           <Textarea placeholder="Message" required />
-          <Button size="lg" className="bg-blue-600 text-white font-semibold">
+          <Button size="lg" className="bg-blue-600 hover:bg-blue-500 text-white font-semibold">
             Send Message
           </Button>
         </motion.form>

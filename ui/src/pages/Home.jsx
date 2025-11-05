@@ -6,6 +6,8 @@ import { CalendarDays, Users, Star, BookOpen, Quote, ImageIcon } from "lucide-re
 import { images } from "@/assets/images";
 import { Staff } from "./Staff";
 import { fadeUp } from "@/utils/fadeUp";
+import { ShowcaseSection } from "./ShowcaseSection";
+import { NewsAndEvents } from "./NewsAndEvents";
 
 export default function Home() {
   return (
@@ -85,9 +87,14 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="events" className="py-20 px-6 md:px-20 text-center">
+        <NewsAndEvents />
+      </section>
+
       {/* Gallery */}
-      <section id="gallery" className="py-20 px-6 md:px-20 text-center">
-        <motion.h2
+      <section id="showcase" className="py-20 px-6 md:px-20 text-center">
+        <ShowcaseSection />
+        {/* <motion.h2
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
@@ -113,7 +120,7 @@ export default function Home() {
               </div>
             </motion.div>
           ))}
-        </div>
+        </div> */}
       </section>
 
       {/* staff */}
@@ -153,7 +160,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="bg-blue-600 py-16 px-6 md:px-20 text-center text-white">
+      <section className="bg-blue-600  py-16 px-6 md:px-20 text-center text-white">
         <motion.h2
           variants={fadeUp}
           initial="hidden"
@@ -175,7 +182,7 @@ export default function Home() {
           possibilities.
         </motion.p>
         <motion.div variants={fadeUp} custom={2} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-          <Button size="lg" className="bg-white text-blue-700 font-semibold">
+          <Button size="lg" className="bg-white hover:bg-gray-50 text-blue-700  font-semibold">
             Apply Now
           </Button>
         </motion.div>
